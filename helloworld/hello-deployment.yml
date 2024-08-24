@@ -13,7 +13,7 @@ spec:
       labels:
         app: hello
     spec:
-      contianers:
+      containers:
         - name: hello-from
           image: pbitty/hello-from:latest
           ports:
