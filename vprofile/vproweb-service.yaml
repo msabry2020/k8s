@@ -8,6 +8,7 @@ metadata:
     io.kompose.service: vproweb
   name: vproweb
 spec:
+  type: NodePort
   ports:
     - name: "80"
       port: 80
