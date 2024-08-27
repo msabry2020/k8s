@@ -26,7 +26,8 @@ spec:
               value: guest
             - name: RABBITMQ_DEFAULT_USER
               value: guest
-          image: rabbitmq
+          image: msabry/rabbitmq:3.13.6
+          imagePullPolicy: IfNotPresent
           name: vpromq01
           ports:
             - containerPort: 15672

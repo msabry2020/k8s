@@ -28,11 +28,5 @@ spec:
           ports:
             - containerPort: 8080
               protocol: TCP
-          volumeMounts:
-            - mountPath: /usr/local/tomcat/webapps
               name: vproappdata
       restartPolicy: Always
-      volumes:
-        - name: vproappdata
-          persistentVolumeClaim:
-            claimName: vproappdata
